@@ -1,0 +1,61 @@
+/* src/css/Sidebar.css */
+
+/* 1) Sidebar container: remove gradient, use #5BAEB2 (greenish-blue). */
+.sidebar-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 300px;
+  height: 100vh; /* ensure it spans full view height */
+  padding-top: 40px;
+  overflow-y: auto;
+  background-color: #5BAEB2; /* your requested color */
+}
+
+/* 2) Make "Welcome!" bigger and bold. */
+#welcomeByName {
+  font-weight: bold;
+  font-size: 1.4rem; /* adjust as needed */
+  color: #000;       /* black text */
+  display: block;    /* so it sits on its own line nicely */
+  margin-bottom: 0.2rem;
+}
+
+/* 3) If your user’s name is displayed by LoggedInName, 
+   we can style it if it has a class or an ID. 
+   For example, if LoggedInName outputs <span className="logged-in-name"> ... </span>, 
+   then we do something like: */
+.logged-in-name {
+  font-size: 1.2rem;
+  font-weight: bold; /* optional */
+  color: #000;
+}
+
+/* 4) Avatar image styling (optional). */
+.user-avatar {
+  width: 46px;
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+/* 5) Style for the w3-bar container that holds the avatar/name. */
+.user-section {
+  display: flex;
+  align-items: center;
+}
+
+/* 6) If you want to style the time display. */
+#timeDisplay {
+  font-weight: bold;
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 1.2rem;
+}
+
+/* 7) Optional link/button styling. */
+.w3-bar-item.w3-button {
+  color: #000 !important; /* override if needed */
+  margin-right: 8px;
+}
+

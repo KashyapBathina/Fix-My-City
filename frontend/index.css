@@ -1,0 +1,25 @@
+/* index.css - Global styles */
+body {
+  margin: 0;
+  font-family: "Raleway", -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: rgb(212,210,196);
+  background: linear-gradient(90deg, rgba(212,210,196,1) 0%, rgba(130,157,172,1) 100%);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+/* Footer styling */
+footer {
+  margin-top: 20px;
+  padding: 10px;
+  text-align: center;
+  color: #6c757d;
+  font-size: 0.875rem;
+}
