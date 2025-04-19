@@ -407,7 +407,7 @@ const getStaticMapUrl = (address: string, zip?: string): string => {
   const fullAddress = zip ? `${address}, ${zip}` : address;
   const encodedAddress = encodeURIComponent(fullAddress);
   // The API key should be in quotes as it's part of the URL string
-  return `https://maps.googleapis.com/maps/api/staticmap?center=${encodedAddress}&zoom=15&size=300x200&maptype=roadmap&markers=color:red%7C${encodedAddress}&key=AIzaSyBdsWHtFC2LAZ6qtn_GyglGoFe-eXwjM_I`;
+  return `https://maps.googleapis.com/maps/api/staticmap?center=${encodedAddress}&zoom=15&size=300x200&maptype=roadmap&markers=color:red%7C${encodedAddress}&key={secret}`;
 };
 
 
